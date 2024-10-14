@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Kaisei+Decol&family=Kosugi+Maru&family=Rowdies:wght@300;400;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"><!--GOOGLE字體 -->
+    <title>Item List</title>
+    <link rel="stylesheet" href="itemliststyle.css">
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="openNav()">☰</div>
+        <div class="title">JellaBella</div>
+        <div class="icons">
+            <div class="icon search">
+                <img src="search.png" alt="search icon" />
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜尋..."
+                />
+            </div>
+            <span class="icon account" onclick="toggleDropdown()">
+                <img src="user.png" alt="account icon" />
+                <div class="dropdown-content">
+                    <a href="login.html"
+                        ><img src="login.png" alt="" />登入/註冊</a
+                    >
+                    <a href="#"
+                        ><img src="checklist.png" alt="" />訂單查詢</a
+                    >
+                    <a href="#"><img src="user.png" alt="" />會員專區</a>
+                    <a href="#"><img src="heart.png" alt="" />我的收藏</a>
+                </div>
+            </span>
+            <span class="icon cart"
+                ><img src="shopping-cart.png" alt="cart icon"
+            /></span>
+        </div>
+    </header>
+    <div class="top-bar">
+        <span>
+            <span>📣</span>
+            <span>加</span>
+            <span>入</span>
+            <span>會</span>
+            <span>員</span>
+            <span>享</span>
+            <span>每</span>
+            <span>月</span>
+            <span>專</span>
+            <span>屬</span>
+            <span>優</span>
+            <span>惠</span>
+        </span>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+        >
+        <div class="menu-title">Menu</div>
+        <div class="menu-subtitle">JellaBella</div>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <button class="login-btn">Login</button>
+    </div>
+    <div class="container">
+        <div class="category-intro">
+            <div class="intro-content">
+                <h2>CANMAKE</h2>
+                <h3>キャンメイク</h3>
+                <p>CANMAKE 為 Everyone can make it 的縮寫<br>
+                    在日本受到年輕女性族群喜愛，每年持續推出創新熱賣產品，市場佳評不斷！！！</p>
+            </div>
+        </div>
+        <div class="category-intro cat1">
+            <div class="intro-content">
+                <h2>底妝</h2>
+                <h3>BASE MAKEUP</h3>
+                <p>打造各種膚質選擇，讓你的肌膚接近理想。</p>
+                <img src="item01-removebg-preview.png" alt="Base Makeup">
+            </div>
+        </div>
+        <div class="category-intro cat2">
+            <div class="intro-content">
+                <h2>修容</h2>
+                <h3>Contour</h3>
+                <p>簡單的增加光影感，呈現最自然的立體豐盈。</p>
+                <img src="item8-removebg-preview.png" alt="Contour">
+            </div>
+        </div>
+        <div class="category-intro cat3">
+            <div class="intro-content">
+                <h2>口紅</h2>
+                <h3>LIPS</h3>
+                <p>質感、顏色變化豐富，找到心目中最理想的一支口紅。</p>
+                <img src="item13-removebg-preview.png" alt="Lip Products">
+            </div>
+        </div>
+        <div class="category-intro cat4">
+            <div class="intro-content">
+                <h2>眼妝</h2>
+                <h3>EYES</h3>
+                <p>配合各種顏色和質地，可以選擇多變的眼妝！</p>
+                <img src="item28-removebg-preview.png" alt="Lip Products">
+            </div>
+        </div>
+        
+        
+        <div class="category-options">
+            <button class="category-button active" data-filter="*">ALL</button>
+            <button class="category-button" data-filter="cat1">底妝</button>
+            <button class="category-button" data-filter="cat2">修容</button>
+            <button class="category-button" data-filter="cat3">口紅</button>
+            <button class="category-button" data-filter="cat4">眼妝</button>
+            <button class="category-button" data-filter="cat5">小狗</button>
+
+
+        </div>
+
+        <div class="item-list">
+            <!-- *底妝 -->
+            <a href="shop.html">
+                <div class="item cat1">
+                        <div class="item-image">
+                            <img src="item01.jpeg" alt="Product Image" class="image-a">
+                            <img src="item02.jpeg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE Abloom透亮美肌蜜粉餅</h3>
+                            <p class="item-price">NT $450</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="angled-text">SALE</span>
+                            <span class="sale-tag">TIMESALE</span>
+                        </div>
+                </div>
+            </a>
+            <!-- *眼妝 -->
+            <a href="shop.html">
+                <div class="item cat4">
+                        <div class="item-image">
+                            <img src="item24.jpeg" alt="Product Image" class="image-a">
+                            <img src="item25.jpeg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 小巧眼影調色盤</h3>
+                            <p class="item-price">NT $435</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="angled-text">SALE</span>
+                            <span class="sale-tag">TIMESALE</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat2">
+                        <!-- *修容 -->
+                        <div class="item-image">
+                            <img src="item3.jpeg" alt="Product Image" class="image-a">
+                            <img src="item4.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 水潤柔光打亮霜</h3>
+                            <p class="item-price">NT $260</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="angled-text">SALE</span>
+                            <span class="sale-tag">TIMESALE</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat1">
+                        <div class="item-image">
+                            <img src="item5.jpeg" alt="Product Image" class="image-a">
+                            <img src="item6.jpeg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 毛孔修飾慕斯</h3>
+                            <p class="item-price">NT $335</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat2">
+                        <div class="item-image">
+                            <img src="item7.jpeg" alt="Product Image" class="image-a">
+                            <img src="item8.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 精緻鼻影組</h3>
+                            <p class="item-price">NT $285</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <!-- *眼妝 -->
+            <a href="shop.html">
+                <div class="item cat4">
+                        <div class="item-image">
+                            <img src="item26.jpeg" alt="Product Image" class="image-a">
+                            <img src="item27.jpeg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 淚袋專用盤</h3>
+                            <p class="item-price">NT $320</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="angled-text">SALE</span>
+                            <span class="sale-tag">TIMESALE</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat1">
+                        <div class="item-image">
+                            <img src="item9.jpeg" alt="Product Image" class="image-a">
+                            <img src="item20.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 肌秘美顏蜜粉餅</h3>
+                            <p class="item-price">NT $430</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat1">
+                        <div class="item-image">
+                            <img src="item21.jpeg" alt="Product Image" class="image-a">
+                            <img src="item23.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 棉花糖蜜粉餅</h3>
+                            <p class="item-price">NT $329</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat3">
+                        <!-- *唇彩 -->
+                        <div class="item-image">
+                            <img src="item11.jpeg" alt="Product Image" class="image-a">
+                            <img src="item13.jpeg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE ＱＱ潤澤唇膏</h3>
+                            <span class="angled-color">NEW COLOR</span>
+                            <p class="item-price">NT $285</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat3">
+                        <!-- *唇彩 -->
+                        <div class="item-image">
+                            <img src="item14.jpeg" alt="Product Image" class="image-a">
+                            <img src="item15.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 美色透亮唇釉 </h3>
+                            <span class="angled-color">NEW COLOR</span>
+                            <p class="item-price">NT $295</p>
+                            <span class="item-tag">NEW</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat3">
+                        <!-- *唇彩 -->
+                        <div class="item-image">
+                            <img src="item16.jpeg" alt="Product Image" class="image-a">
+                            <img src="item17.jpeg" alt="Product Image" class="image-b">
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">CANMAKE 絲滑透亮唇膏 </h3>
+                            <p class="item-price">NT $299</p>
+                            <span class="angled-text">SALE</span>
+                            <span class="item-tag">NEW</span>
+                            <span class="sale-tag">TIMESALE</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat5">
+                        <!-- *小狗 -->
+                        <div class="item-image">
+                            <img src="kirua.jpg" alt="Product Image" class="image-a">
+                            <img src="kirua2.png" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">奇犽 </h3>
+                            <span class="angled-text">KAWAII</span>
+                            <p class="item-price">NT $999999</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="sale-tag">PUPPY</span>
+                        </div>
+                </div>
+            </a>
+            <a href="shop.html">
+                <div class="item cat5">
+                        <!-- *小狗 -->
+                        <div class="item-image">
+                            <img src="abao2.jpg" alt="Product Image" class="image-a">
+                            <img src="abao.jpg" alt="Product Image" class="image-b">
+                            <div class="heart-effect"></div>
+                        </div>
+                        <div class="item-details">
+                            <h3 class="item-name">阿寶</h3>
+                            <span class="angled-text">LOVELY</span>
+                            <p class="item-price">NT $999999</p>
+                            <span class="item-tag">NEW</span>
+                            <span class="sale-tag">PUPPY</span>
+                        </div>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for more items -->
+        </div>
+        
+
+        <!-- <div class="pagination">
+            <a href="#" class="page-number">1</a>
+            <a href="#" class="page-number">2</a>
+            <a href="#" class="page-number">3</a>
+        </div> -->
+    </div>
+    
+    <!-- !Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>聯絡我們</h3>
+            <ul>
+                <li>UI design</li>
+                <li>UX design</li>
+                <li>Wireframing</li>
+                <li>Diagramming</li>
+                <li>Brainstorming</li>
+                <li>Online whiteboard</li>
+                <li>Team collaboration</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>關於我們</h3>
+            <ul>
+                <li>Design</li>
+                <li>Prototyping</li>
+                <li>Development features</li>
+                <li>Design systems</li>
+                <li>Collaboration features</li>
+                <li>Design process</li>
+                <li>FigJam</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>贊助</h3>
+            <ul>
+                <li>Blog</li>
+                <li>Best practices</li>
+                <li>Colors</li>
+                <li>Color wheel</li>
+                <li>Support</li>
+                <li>Developers</li>
+                <li>Resource library</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="itemlistjs.js"></script>
+</body>
+</html>

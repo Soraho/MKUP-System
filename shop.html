@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Kaisei+Decol&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="shopstyle.css">
+    <title>絲滑透亮唇膏</title>
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="openNav()">☰</div>
+        <div class="title">JellaBella</div>
+        <div class="icons">
+            <div class="icon search">
+                <img src="search.png" alt="search icon" />
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜尋..."
+                />
+            </div>
+            <span class="icon account" onclick="toggleDropdown()">
+                <img src="user.png" alt="account icon" />
+                <div class="dropdown-content">
+                    <a href="login.html"
+                        ><img src="login.png" alt="" />登入/註冊</a
+                    >
+                    <a href="#"
+                        ><img src="checklist.png" alt="" />訂單查詢</a
+                    >
+                    <a href="#"><img src="user.png" alt="" />會員專區</a>
+                    <a href="#"><img src="heart.png" alt="" />我的收藏</a>
+                </div>
+            </span>
+            <span class="icon cart"
+                ><img src="shopping-cart.png" alt="cart icon"
+            /></span>
+        </div>
+    </header>
+    <div class="top-bar">
+        <span>
+            <span>📣</span>
+            <span>加</span>
+            <span>入</span>
+            <span>會</span>
+            <span>員</span>
+            <span>享</span>
+            <span>每</span>
+            <span>月</span>
+            <span>專</span>
+            <span>屬</span>
+            <span>優</span>
+            <span>惠</span>
+        </span>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+        >
+        <div class="menu-title">Menu</div>
+        <div class="menu-subtitle">JellaBella</div>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <button class="login-btn">Login</button>
+    </div>
+
+    <div class="container">
+        <main>
+            <section class="product">
+                <div class="image-gallery">
+                    <img src="item16.jpeg" alt="商品画像" id="main-image" class="product-image">
+                    <div class="thumbnail-gallery">
+                        <img src="item16-1.jpeg" alt="ブラック" class="thumbnail active" data-color="black">
+                        <img src="item16-2.jpeg" alt="ピンク" class="thumbnail" data-color="pink">
+                        <img src="item16-3.jpeg" alt="アイボリー" class="thumbnail" data-color="ivory">
+                        <img src="item16-4.jpeg" alt="チャコール" class="thumbnail" data-color="charcoal">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <p class="newlabel">NEW</p>  <p class="timesale">TIMESALE</p>
+                    <h2>CANMAKE 絲滑透亮唇膏</h2>
+                    <p class="price"><span class="sale">NT $329</span> NT $299</p>
+                    <p class="points">7pt點數回饋</p>
+                    <div class="options">
+                        <label for="color">顏色：</label>
+                        <select id="color">
+                            <option value="black">T02 玫瑰奶茶</option>
+                            <option value="pink">T03 摯愛鮮紅</option>
+                            <option value="ivory">T04 醇厚生巧克力</option>
+                            <option value="charcoal">T06 櫻花粉天使</option>
+                        </select>
+                    </div>
+                    <div class="actions">
+                        <button id="add-to-cart">加入購物車</button>
+                        <button id="add-to-wishlist">♡ 加入收藏</button>
+                    </div>
+                    <p class="introduction">💗可愛的浮雕心型設計，含有保濕成分！<br>
+                        可愛透明感色調，緊密貼合嘴唇，營造出清新優雅的光澤感。
+                    </p>
+                </div>
+            </section>
+        </main>
+        
+    </div>
+    <!-- !Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>聯絡我們</h3>
+            <ul>
+                <li>UI design</li>
+                <li>UX design</li>
+                <li>Wireframing</li>
+                <li>Diagramming</li>
+                <li>Brainstorming</li>
+                <li>Online whiteboard</li>
+                <li>Team collaboration</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>關於我們</h3>
+            <ul>
+                <li>Design</li>
+                <li>Prototyping</li>
+                <li>Development features</li>
+                <li>Design systems</li>
+                <li>Collaboration features</li>
+                <li>Design process</li>
+                <li>FigJam</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>贊助</h3>
+            <ul>
+                <li>Blog</li>
+                <li>Best practices</li>
+                <li>Colors</li>
+                <li>Color wheel</li>
+                <li>Support</li>
+                <li>Developers</li>
+                <li>Resource library</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="stylescript.js"></script>
+</body>
+</html>

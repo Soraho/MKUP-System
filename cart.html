@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Kaisei+Decol&family=Kosugi+Maru&family=Rowdies:wght@300;400;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"><!--GOOGLE字體 -->
+    <link rel="stylesheet" href="cartstyle.css">
+    <title>cart</title>
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="openNav()">☰</div>
+        <div class="title">JellaBella</div>
+        <div class="icons">
+            <div class="icon search">
+                <img src="search.png" alt="search icon" />
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜尋..."
+                />
+            </div>
+            <span class="icon account" onclick="toggleDropdown()">
+                <img src="user.png" alt="account icon" />
+                <div class="dropdown-content">
+                    <a href="login.html"
+                        ><img src="login.png" alt="" />登入/註冊</a
+                    >
+                    <a href="#"
+                        ><img src="checklist.png" alt="" />訂單查詢</a
+                    >
+                    <a href="#"><img src="user.png" alt="" />會員專區</a>
+                    <a href="#"><img src="heart.png" alt="" />我的收藏</a>
+                </div>
+            </span>
+            <span class="icon cart"
+                ><img src="shopping-cart.png" alt="cart icon"
+            /></span>
+        </div>
+    </header>
+    <div class="top-bar">
+        <span>
+            <span>📣</span>
+            <span>加</span>
+            <span>入</span>
+            <span>會</span>
+            <span>員</span>
+            <span>享</span>
+            <span>每</span>
+            <span>月</span>
+            <span>專</span>
+            <span>屬</span>
+            <span>優</span>
+            <span>惠</span>
+        </span>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+        >
+        <div class="menu-title">Menu</div>
+        <div class="menu-subtitle">JellaBella</div>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <button class="login-btn">Login</button>
+    </div>
+
+    <div class="container">
+        <main>
+            <section class="cart-items">
+                <div class="cart-item">
+                    <img src="item16-1.jpeg" alt="商品圖片" class="product-image">
+                    <div class="product-details">
+                        <h2>CANMAKE 絲滑透亮唇膏</h2>
+                        <p>T02 玫瑰奶茶</p>
+                        <div class="quantity">
+                            <label for="quantity">數量:</label>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <p class="price">小計：NT $299</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="later-btn">稍後再買</button>
+                        <button class="delete-btn">刪除</button>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-items">
+                <div class="cart-item">
+                    <img src="item16-1.jpeg" alt="商品圖片" class="product-image">
+                    <div class="product-details">
+                        <h2>CANMAKE 絲滑透亮唇膏</h2>
+                        <p>T02 玫瑰奶茶</p>
+                        <div class="quantity">
+                            <label for="quantity">數量:</label>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <p class="price">小計：NT $299</p>
+                    </div>
+                    <div class="product-actions">
+                        <button class="later-btn">稍後再買</button>
+                        <button class="delete-btn">刪除</button>
+                    </div>
+                </div>
+            </section>
+            <section class="cart-summary">
+                <div class="summary">
+                    <a href="pay.html">
+                        <button class="checkout-btn">前往結帳</button>
+                    <a href="itemlist.html">
+                        <button class="continue-btn">繼續購物</button>
+                    </a>
+                    <p class="total-price">商品總金額： <span id="total-amount">NT $599</span></p>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+    <!-- !Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>聯絡我們</h3>
+            <ul>
+                <li>UI design</li>
+                <li>UX design</li>
+                <li>Wireframing</li>
+                <li>Diagramming</li>
+                <li>Brainstorming</li>
+                <li>Online whiteboard</li>
+                <li>Team collaboration</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>關於我們</h3>
+            <ul>
+                <li>Design</li>
+                <li>Prototyping</li>
+                <li>Development features</li>
+                <li>Design systems</li>
+                <li>Collaboration features</li>
+                <li>Design process</li>
+                <li>FigJam</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>贊助</h3>
+            <ul>
+                <li>Blog</li>
+                <li>Best practices</li>
+                <li>Colors</li>
+                <li>Color wheel</li>
+                <li>Support</li>
+                <li>Developers</li>
+                <li>Resource library</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="cartjs.js"></script>
+</body>
+</html>

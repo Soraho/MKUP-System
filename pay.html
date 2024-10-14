@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link rel="stylesheet" href="paystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Kaisei+Decol&family=Kosugi+Maru&family=Rowdies:wght@300;400;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet"><!--GOOGLE字體 -->
+</head>
+<body>
+    <header>
+        <div class="menu" onclick="openNav()">☰</div>
+        <div class="title">JellaBella</div>
+        <div class="icons">
+            <div class="icon search">
+                <img src="search.png" alt="search icon" />
+                <input
+                    type="text"
+                    class="search-input"
+                    placeholder="搜尋..."
+                />
+            </div>
+            <span class="icon account" onclick="toggleDropdown()">
+                <img src="user.png" alt="account icon" />
+                <div class="dropdown-content">
+                    <a href="login.html"
+                        ><img src="login.png" alt="" />登入/註冊</a
+                    >
+                    <a href="#"
+                        ><img src="checklist.png" alt="" />訂單查詢</a
+                    >
+                    <a href="#"><img src="user.png" alt="" />會員專區</a>
+                    <a href="#"><img src="heart.png" alt="" />我的收藏</a>
+                </div>
+            </span>
+            <span class="icon cart"
+                ><img src="shopping-cart.png" alt="cart icon"
+            /></span>
+        </div>
+    </header>
+    <div class="top-bar">
+        <span>
+            <span>📣</span>
+            <span>加</span>
+            <span>入</span>
+            <span>會</span>
+            <span>員</span>
+            <span>享</span>
+            <span>每</span>
+            <span>月</span>
+            <span>專</span>
+            <span>屬</span>
+            <span>優</span>
+            <span>惠</span>
+        </span>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+        >
+        <div class="menu-title">Menu</div>
+        <div class="menu-subtitle">JellaBella</div>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <a href="#">Menu item</a>
+        <button class="login-btn">Login</button>
+    </div>
+    <div class="container">
+        <section class="shipping-info">
+            <h2>運送地址</h2>
+            <p>姓名：劉芷婷</p>
+            <p>電話：0912345678</p>
+            <p>地址：7-11 民美門市 台北市中山區中山北路三段57號</p>
+            <button class="change-button">變更</button>
+        </section>
+
+        <section class="points">
+            <h2>點數</h2>
+            <p>可利用點數：300pt</p>
+            <label for="use-points">要使用的點數：</label>
+            <input type="number" id="use-points" name="points">
+        </section>
+
+        <!-- <section class="payment-method">
+            <h2>支付方式</h2>
+            <label>
+                <input type="radio" name="payment" value="credit-card">
+                信用卡
+                <div class="card-icons">
+                    <img src="paypal.png" alt="PayPal">
+                    <img src="visa.png" alt="Visa">
+                    <img src="mastercard.png" alt="MasterCard">
+                    <img src="amex.png" alt="American Express">
+                </div>
+            </label>
+            <div class="credit-card-info">
+                <input type="text" placeholder="卡號">
+                <input type="text" placeholder="姓名">
+                <input type="text" placeholder="有效期限">
+                <input type="text" placeholder="安全碼">
+            </div>
+
+            <label>
+                <input type="radio" name="payment" value="cash-on-delivery">
+                貨到付款
+            </label>
+        </section> -->
+        <section class="cart-items">
+            <h2>訂單詳情</h2>
+            <div class="cart-item">
+                <img src="item16-1.jpeg" alt="商品圖片" class="product-image">
+                <div class="product-details">
+                    <P>CANMAKE 絲滑透亮唇膏</P>
+                    <p>T02 玫瑰奶茶</p>
+                    <div class="quantity">
+                        <label for="quantity">數量:</label>
+                        <select id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <p class="price">小計：NT $299</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="order-details">
+            <h2>訂單詳情</h2>
+            <div class="product">
+                <p>Romand 十色眼影盤</p>
+                <p>06 杜丹花園</p>
+                <p>數量：1個</p>
+                <p>NT $599</p>
+            </div>
+            <div class="price-breakdown">
+                <p>商品總金額：$599</p>
+                <p>運費：$60</p>
+                <p>商品貼紙：4點</p>
+                <p class="total">訂單總計：$659</p>
+            </div>
+        </section> -->
+        <section class="cart-summary">
+            <div class="summary">
+                <p class="total-price">商品總金額： <span id="total-amount">NT $599</span></p>
+            </div>
+        </section>
+        <button class="confirm-order-button">確認訂單</button>
+    </div>
+    <!-- !Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>聯絡我們</h3>
+            <ul>
+                <li>UI design</li>
+                <li>UX design</li>
+                <li>Wireframing</li>
+                <li>Diagramming</li>
+                <li>Brainstorming</li>
+                <li>Online whiteboard</li>
+                <li>Team collaboration</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>關於我們</h3>
+            <ul>
+                <li>Design</li>
+                <li>Prototyping</li>
+                <li>Development features</li>
+                <li>Design systems</li>
+                <li>Collaboration features</li>
+                <li>Design process</li>
+                <li>FigJam</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>贊助</h3>
+            <ul>
+                <li>Blog</li>
+                <li>Best practices</li>
+                <li>Colors</li>
+                <li>Color wheel</li>
+                <li>Support</li>
+                <li>Developers</li>
+                <li>Resource library</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- <footer>
+        <div class="footer-info">
+            <p>注意事項：請確認您的訂單，在處理訂單之前，請務必確認尺吋、顏色和數量。</p>
+            <p>請注意：本公司可能無法處理更改與交換後的送達地址和付款方式的要求。</p>
+        </div>
+    </footer> -->
+    <script src="payjs.js"></script>
+</body>
+</html>
